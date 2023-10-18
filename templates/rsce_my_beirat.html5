@@ -1,0 +1,19 @@
+
+<div class="members">
+    <div class="block-left">
+        <h3><?= $this->text  ?></h3>
+        <img src="{{file::<?= $this->icon ?>}}">
+    </div>
+    <div class="block-right">
+        <p><?= $this->description  ?></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

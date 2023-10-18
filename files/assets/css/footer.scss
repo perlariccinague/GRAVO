@@ -1,0 +1,125 @@
+@import "variables";
+
+#footer {
+  background: linear-gradient(90deg, rgba(84,84,84,1) 60%, rgba(28,28,28,1) 100%);
+  position: relative;
+ /* &:after {
+    position: absolute;
+    content: "";
+    background: url("/files/inhalte/bilder/footer-bg.webp") no-repeat;
+    width: 100%;
+    height: 290px;
+    background-size: 100%;
+  }*/
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  position: relative;
+  z-index: 105;
+  .footer-left, .footer-right {
+    width: 33%;
+  }
+}
+
+.footer-left {
+  .mod_customnav {
+    ul {
+      li {
+        padding: 10px 0;
+        font: normal normal 500 16px/18px "Exo 2";
+        &:not(:last-child) {
+          border-bottom: 1px solid #fff;
+        }
+        a, strong {
+          display: block;
+          position: relative;
+          padding-left: 25px;
+          width: 100%;
+          color: white;
+          transition: color 250ms;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background: url("/files/assets/layout/Pfeil-right-white.svg") no-repeat;
+          }
+          &:hover {
+            color: $blue;
+          }
+        }
+        strong {
+          color: $blue;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.footer-right,  .menu-bottom-footer {
+  color: white;
+  .ce_text {
+    p {
+      font: normal normal 300 16px/20px "Exo 2";
+      strong {
+        text-transform: uppercase;
+      }
+      a {
+        color: white;
+        text-transform: initial;
+        transition: color 250ms;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.footer .footer-social-icons, .menu-bottom .footer-social-icons {
+  margin-top: 50px;
+  p {
+    text-transform: uppercase;
+    color: white;
+    font: normal normal 600 16px/18px "Exo 2";
+  }
+  .icon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 135px;
+    a {
+      width: 60px;
+      transition: filter 250ms;
+     /* img {
+        width: 60px;
+      }*/
+      &:hover {
+        filter: brightness(1.6);
+      }
+    }
+  }
+}
+
+.footer-bg {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    background: url("/files/inhalte/bilder/Footer_banner.webp") no-repeat;
+    width: 100%;
+    height: 130px;
+    background-position-x: 50%;
+    top: 0;
+  }
+}

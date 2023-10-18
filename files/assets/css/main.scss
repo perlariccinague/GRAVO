@@ -1,0 +1,154 @@
+@import "variables";
+
+.banner-image {
+  position: relative;
+  z-index: 1;
+  .header-banner {
+    width: 100%;
+    margin: 0;
+    img {
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+      object-position: 100% 0;
+    }
+    &.small {
+      img {
+        height: 25vh;
+
+      }
+    }
+  }
+}
+
+.news, .partners {
+  position: relative;
+  background: url("/files/inhalte/bilder/titelbilder/news-bg.jpg") no-repeat 0/cover;
+  margin-top: -3px;
+  z-index: 5;
+}
+
+.teaser-content {
+  margin: 100px auto;
+  h2, h3 {
+    text-align: center;
+    color: white;
+    .h2-span {
+      background: $darkblue;
+      font: normal normal 600 22px/40px "Exo 2";
+      text-transform: uppercase;
+      padding: 4px 10px;
+    }
+  }
+  h3 {
+   .h3-span {
+     background: $blue;
+     font: normal normal 400 20px/36px "Exo 2";
+     padding: 4px 8px;
+   }
+  }
+  p {
+    font: normal normal 300 20px/28px "Exo 2";
+  }
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn a, .submit {
+  border: 2px solid $rosa;
+  padding: 10px 40px 10px 70px;
+  color: $rosa;
+  display: inline-block;
+  font: normal normal 400 20px/24px "Exo 2";
+  position: relative;
+  background: transparent;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 37px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background: url("/files/assets/layout/Pfeil-right.svg") no-repeat;
+  }
+}
+
+.partners {
+  background: url("/files/inhalte/bilder/Partner-bg.webp") no-repeat 0/cover;
+  .teaser-content.partner {
+    margin-bottom: 20px
+  }
+}
+
+.btn.partner > p > a {
+  color: white;
+  border-color: white;
+  &:before {
+    background: url("/files/assets/layout/Pfeil-right-white.svg") no-repeat;
+  }
+}
+
+.sponsors {
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .ce_image.sponsor {
+    width: 24%;
+  }
+}
+
+.networking {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  .ce_text.image-bottom.block {
+    border-right: 1px solid $rosa;
+    padding-right: 10px;
+    margin-right: 15px;
+    p {
+      text-transform: uppercase;
+      font: normal normal 500 24px/26px "Exo 2";
+    }
+    img {
+      width: 100px;
+    }
+    &.image {
+      img {
+        width: 140px;
+      }
+    }
+  }
+}
+
+.contact {
+  background: rgba(84,84,84,0.3);
+}
+
+.actuelles {
+  margin: 50px auto;
+  .layout_latest {
+    color: white;
+    background: linear-gradient(90deg, rgba(84,84,84,0.6) 100%, rgba(28,28,28,0.3) 20%);
+    margin: 10px auto;
+    padding: 15px 20px;
+    h2 {
+      a {
+        color: white;
+        transition: color250ms;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+   p {
+     font: normal normal 400 20px/26px "Exo 2";
+   }
+  }
+}
+
+
+

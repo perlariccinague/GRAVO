@@ -1,0 +1,72 @@
+@import "variables";
+
+.news-event {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  .news-left, .event-right {
+    width: 48%;
+    h2 {
+      color: white;
+      text-transform: uppercase;
+      background: #1c388f;
+      display: inline-block;
+      padding: 0 5px;
+      font: normal normal 600 20px/36px "Exo 2";
+      transform: translateY(35px);
+      margin-left: 25px;
+    }
+    .ce_text p {
+      margin-left: 48px;
+    }
+  }
+  .news-bg {
+    background: rgba(204,0,123, 0.6);
+  }
+  .event-bg {
+    background: rgba(28,56,143, 0.6);
+  }
+  .news-bg, .event-bg {
+    height: 450px;
+    .mod_newslist, .mod_eventlist {
+      .layout_latest, .event.layout_list {
+        font-size: 17px;
+        margin: 0 25px;
+        box-sizing: border-box;
+       /* height: 155px;*/
+        max-width: 410px;
+        padding-bottom: 7px;
+        &:not(:last-child) {
+          border-bottom: 1px solid white;
+        }
+        &:first-child {
+          padding-top: 20px;
+      }
+        p, h3 {
+          a {
+            text-transform: initial;
+            color: white;
+            line-height: 26px;
+            transition: color 250ms;
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+        h3 {
+          margin-top: 0;
+          a {
+            font-weight: 300;
+          }
+        }
+        p {
+          margin-bottom: 0;
+          a {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
