@@ -44,6 +44,10 @@
               color: $darkblue;
             }
           }
+          strong {
+            color: $darkblue;
+            text-transform: uppercase;
+          }
         }
       }
     }

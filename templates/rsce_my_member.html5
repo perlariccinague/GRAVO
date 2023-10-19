@@ -1,18 +1,8 @@
-<a class="benefits-link" <?= $this->url ?>>
-    <div class="box">
-        <h3><?= $this->text  ?></h3>
-        <div class="description">
-            <div class="teaser">
-                <img src="{{file::<?= $this->image ?>}}">
-            </div>
-        </div>
-    </div>
-</a>
 
 <div class="members">
     <div class="block-left">
         <h3><?= $this->text  ?></h3>
-        <img src="{{file::<?= $this->icon ?>}}">
+        <img src="{{file::<?= $this->image ?>}}">
     </div>
     <div class="block-right">
         <p><?= $this->description  ?></p>

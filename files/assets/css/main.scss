@@ -56,7 +56,11 @@
   text-align: center;
 }
 
-.btn a, .submit {
+.btn a, .submit, .news-all .more a,
+.mod_newsreader .back a, .mod_eventreader .back a,
+.mod_eventreader .layout_full .ce_download p a,
+.mod_article .ce_download p a,
+.project .mod_newslist .project-block p a {
   border: 2px solid $rosa;
   padding: 10px 40px 10px 70px;
   color: $rosa;
@@ -64,6 +68,9 @@
   font: normal normal 400 20px/24px "Exo 2";
   position: relative;
   background: transparent;
+  outline: 0;
+  text-align: center;
+  transition: background-color 250ms, color 250ms;
   &:before {
     content: "";
     position: absolute;
@@ -72,6 +79,14 @@
     width: 24px;
     height: 24px;
     background: url("/files/assets/layout/Pfeil-right.svg") no-repeat;
+  }
+  &:hover {
+    background: $rosa;
+    color: white;
+    border: 2px solid transparent;
+  }
+  &:hover:before {
+    background: url("/files/assets/layout/Pfeil-right-white.svg") no-repeat;
   }
 }
 
@@ -128,27 +143,233 @@
   background: rgba(84,84,84,0.3);
 }
 
-.actuelles {
-  margin: 50px auto;
-  .layout_latest {
+.block-news, .privacy, .project {
+  text-align: center;
+  margin: 40px auto;
+  .ce_headline {
+    background: #1c388f;
+    font: normal normal 600 22px/40px "Exo 2";
+    text-transform: uppercase;
+    padding: 4px 25px;
+    display: inline-block;
     color: white;
-    background: linear-gradient(90deg, rgba(84,84,84,0.6) 100%, rgba(28,28,28,0.3) 20%);
-    margin: 10px auto;
-    padding: 15px 20px;
+  }
+}
+
+.news-all {
+  text-align: left;
+  .news-block {
+    margin-bottom: 40px;
+    .layout_latest, .event.layout_teaser {
+      color: white;
+      background: linear-gradient(90deg, rgba(84,84,84,0.6) 100%, rgba(28,28,28,0.3) 20%);
+      margin: 10px auto;
+      padding: 15px 20px;
+      h2 {
+        font: normal normal 600 22px/30px "Exo 2";
+        a {
+          color: white;
+          transition: color 250ms;
+          &:hover {
+            color: $darkblue;
+          }
+        }
+      }
+      p {
+        font: normal normal 400 20px/26px "Exo 2";
+      }
+    }
+  }
+}
+
+.mod_newsreader .layout_full, .mod_eventreader .layout_full,
+ .privacy {
+  ul {
+    li {
+      font: normal normal 400 20px/26px "Exo 2";
+      margin-left: 35px;
+      color: $grau;
+      &:before {
+        color: $darkblue;
+        content: "»";
+        position: absolute;
+        margin-left: -20px;
+        font-size: 25px;
+        margin-top: -3px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.mod_newsreader, .mod_eventreader {
+  margin: 30px auto;
+  .layout_full {
     h2 {
+      font: normal normal 600 22px/30px "Exo 2";
+      color: $darkblue;
+      text-transform: uppercase;
+    }
+    p {
+      font: normal normal 400 20px/26px "Exo 2";
+      color: $grau;
       a {
-        color: white;
-        transition: color250ms;
+        color: black;
+        text-transform: initial;
+        transition: color 250ms;
         &:hover {
           color: $blue;
         }
       }
     }
-   p {
-     font: normal normal 400 20px/26px "Exo 2";
-   }
+    ul {
+      margin-bottom: 15px;
+    }
+    .ce_image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  p.back {
+    a {
+      padding: 10px 25px 10px 50px;
+      &:before {
+        background: url("/files/assets/layout/Arrow_left_rosa.svg") no-repeat;
+        background-size: 45px;
+        left: 5px;
+        top: 1px;
+        height: 40px;
+        width: 40px;
+      }
+      &:hover:before {
+        background: url("/files/assets/layout/Pfeil_left_white..svg") no-repeat 0/cover;
+        top: 3px;
+      }
+    }
   }
 }
+
+.mod_eventreader .layout_full .ce_download,
+.mod_article .ce_download {
+  h3 {
+    padding: 10px 10px;
+    color: white;
+    display: inline-block;
+    font: normal normal 400 20px/24px "Exo 2";
+    position: relative;
+    background: rgb(183,183,183);
+    outline: 0;
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    margin-top: -15px;
+    a {
+      padding: 10px 30px;
+      text-transform: uppercase;
+      display: block;
+      text-align: left;
+      &:before {
+        background: url("/files/assets/layout/Pfeil-down.svg") no-repeat;
+        left: 7px;
+        top: 14px;
+        width: 17px;
+        height: 17px;
+      }
+      &:hover:before {
+        background: url("/files/assets/layout/Pfeil_down_white.svg") no-repeat;
+      }
+    }
+  }
+}
+
+
+
+.privacy, .project {
+  h2 {
+    background: #1c388f;
+    font: normal normal 600 22px/40px "Exo 2";
+    text-transform: uppercase;
+    padding: 4px 25px;
+    display: inline-block;
+    color: white;
+  }
+  h3, p, ul {
+    text-align: left;
+    color: #545454;
+    font: normal normal 600 22px/26px "Exo 2";
+  }
+  p {
+    font: normal normal 400 20px/26px "Exo 2";
+    a {
+      color: $darkblue;
+      text-transform: initial;
+      transition: color 50ms;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.project {
+  .ce_image {
+    img {
+      width: 100%;
+    }
+  }
+  .mod_newslist {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .project-block {
+      width: 47%;
+      margin: 4px auto ;
+      .layout_short {
+        background: linear-gradient(90deg, rgba(84, 84, 84, 0.6) 100%, rgba(28, 28, 28, 0.3) 20%);
+        height: 575px;
+        .image_container {
+          img {
+            width: 100%;
+          }
+        }
+        .project-teaser {
+          padding: 0 15px;
+          h2 {
+            background: none;
+            text-align: left;
+            display: block;
+            padding: 0;
+            a {
+              color: white;
+              transition: color 250ms;
+              &:hover {
+                color: $darkblue;
+              }
+            }
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project .mod_newslist .project-block p a  {
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#work-group.project .mod_newslist .project-block .layout_short {
+  height: auto;
+}
+
 
 
 

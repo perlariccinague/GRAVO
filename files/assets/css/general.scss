@@ -15,7 +15,9 @@ a {
 }
 
 .header, .news-event, .teaser-content,
-.sponsors, .footer, .layout_full.block, .actuelles {
+.sponsors, .footer, .mod_newsreader,
+.mod_newslist, .mod_eventreader, .mod_eventlist,
+.privacy, .project {
   width: 90%;
   max-width: $max-width;
   margin: 0 auto;
@@ -42,5 +44,12 @@ a {
       }
     }
   }
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-align: center;
 }
 
