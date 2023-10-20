@@ -21,7 +21,7 @@
   }
 }
 
-.news, .partners {
+.news, .partners, .members-block {
   position: relative;
   background: url("/files/inhalte/bilder/titelbilder/news-bg.jpg") no-repeat 0/cover;
   margin-top: -3px;
@@ -60,7 +60,8 @@
 .mod_newsreader .back a, .mod_eventreader .back a,
 .mod_eventreader .layout_full .ce_download p a,
 .mod_article .ce_download p a,
-.project .mod_newslist .project-block p a {
+.project .mod_newslist .project-block p a,
+.network a {
   border: 2px solid $rosa;
   padding: 10px 40px 10px 70px;
   color: $rosa;
@@ -184,6 +185,9 @@
 
 .mod_newsreader .layout_full, .mod_eventreader .layout_full,
  .privacy {
+  h3 {
+    text-transform: uppercase;
+  }
   ul {
     li {
       font: normal normal 400 20px/26px "Exo 2";
@@ -252,7 +256,7 @@
 
 .mod_eventreader .layout_full .ce_download,
 .mod_article .ce_download {
-  h3 {
+  h3, h2 {
     padding: 10px 10px;
     color: white;
     display: inline-block;
@@ -326,8 +330,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     .project-block {
-      width: 47%;
-      margin: 4px auto ;
+      width: 49%;
+      margin: 4px 0 ;
       .layout_short {
         background: linear-gradient(90deg, rgba(84, 84, 84, 0.6) 100%, rgba(28, 28, 28, 0.3) 20%);
         height: 575px;
@@ -368,6 +372,69 @@
 
 #work-group.project .mod_newslist .project-block .layout_short {
   height: auto;
+}
+
+.ce_youtube.block {
+  iframe {
+    width: 100%;
+    margin: 30px auto;
+    height: 50vh;
+  }
+}
+
+.text-image {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  margin: 50px auto 30px;
+  .block-left {
+    width: 30%;
+    margin-top: 21px;
+  }
+  .block-right {
+    width: 66%;
+    text-align: left;
+    h3 {
+      background: #1c388f;
+      font: normal normal 600 22px/36px "Exo 2";
+      text-transform: uppercase;
+      padding: 0 10px;
+      display: inline-block;
+      color: white;
+      text-align: left;
+    }
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid $grau;
+  }
+}
+
+.network-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto 50px;
+  .network {
+    width: 49%;
+    margin: 10px 0;
+    .network-bg {
+      background: linear-gradient(90deg, rgba(84, 84, 84, 0.6) 100%, rgba(28, 28, 28, 0.3) 20%);
+      color: white;
+      padding: 15px 20px;
+      height: 300px;
+      margin: 10px 0;
+      h2 {
+        font: normal normal 600 22px/30px "Exo 2";
+      }
+      p {
+        font: normal normal 400 20px/26px "Exo 2";
+      }
+    }
+    a {
+      display: block;
+    }
+  }
 }
 
 

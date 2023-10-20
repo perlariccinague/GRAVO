@@ -1,10 +1,9 @@
-
 <div class="members">
-    <div class="block-left">
-        <h3><?= $this->text  ?></h3>
+    <div class="members-top">
         <img src="{{file::<?= $this->image ?>}}">
     </div>
-    <div class="block-right">
+    <div class="members-bottom">
+        <h3><?= $this->text  ?></h3>
         <p><?= $this->description  ?></p>
     </div>
 </div>

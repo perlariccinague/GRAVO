@@ -4,6 +4,7 @@
         {{insert_module::16}}
     </div>
     <div class="footer-right">
+        <img src="files/assets/layout/footer-before.webp" alt="arend">
         {{insert_content::219}}
     </div>
 </div>

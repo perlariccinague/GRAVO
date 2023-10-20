@@ -1,0 +1,20 @@
+<div class="network">
+    <div class="network-bg">
+        <div class="network-teaser">
+            <h2><?= $this->text  ?></h2>
+            <p><?= $this->description  ?></p>
+        </div>
+    </div>
+    <a href="<?= $this->url  ?>"><?= $this->button  ?></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+

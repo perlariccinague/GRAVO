@@ -1,10 +1,10 @@
 
-<div class="members">
+<div class="text-image">
     <div class="block-left">
-        <h3><?= $this->text  ?></h3>
-        <img src="{{file::<?= $this->icon ?>}}">
+        <img src="{{file::<?= $this->image ?>}}">
     </div>
     <div class="block-right">
+        <h3><?= $this->text  ?></h3>
         <p><?= $this->description  ?></p>
     </div>
 </div>
