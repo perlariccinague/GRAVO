@@ -25,9 +25,11 @@
       padding: 10px 10px;
       border-bottom: 1px solid $rosa;
       outline: 0;
+      font-size: 20px;
       transition: border 250ms;
       &:hover {
-        border: 1px solid $blue;
+        border-bottom: 1px solid $blue;
+        /*background: $blue;*/
       }
     }
     & > textarea {
@@ -36,11 +38,14 @@
   }
 }
 
-.contact-form .widget-checkbox {
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.contact-form .widget-checkbox, .contact-form  .widget-radio{
   margin: 20px 0;
   fieldset {
-    border: none;
-    padding: 0;
     span {
       input {
         display: none;
@@ -53,7 +58,7 @@
         font: normal normal 300 16px/20px "Exo 2";
         float: right;
         a {
-          color: black;
+          color: $darkblue;
           text-transform: initial;
           transition: color 250ms;
           &:hover {
@@ -77,8 +82,10 @@
   }
 }
 
-.contact-form.ce_form .widget-checkbox fieldset span input:checked ~ label::before {
-  content: "✓";
+.contact-form.ce_form .widget-checkbox fieldset span input:checked ~ label::before,
+.contact-form.ce_form .widget-radio fieldset .title .span span input:checked ~ label::before {
+  /*content: "✓";*/
+  background: $rosa;
 }
 
 .widget.widget-submit {
@@ -87,6 +94,33 @@
   margin: 20px auto;
   .submit {
     text-transform: uppercase;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  legend {
+    font: normal normal 400 20px/40px "Exo 2";
+    background: #00aee5;
+    color: white;
+    align-self: center;
+    padding: 0 7px;
+  }
+  .span {
+    width: 64%;
+    display: inline-flex;
+    justify-content: space-between;
+    font: normal normal 300 16px/20px "Exo 2";
+    span {
+      width: 20%;
+      label{
+        &:before {
+          border-radius: 50%;
+        }
+      }
+    }
   }
 }
 

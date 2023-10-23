@@ -61,6 +61,7 @@
 .mod_eventreader .layout_full .ce_download p a,
 .mod_article .ce_download p a,
 .project .mod_newslist .project-block p a,
+.project .mod_eventlist .project-block p a,
 .network a {
   border: 2px solid $rosa;
   padding: 10px 40px 10px 70px;
@@ -108,9 +109,6 @@
 
 .sponsors {
   margin: 60px auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   .ce_image.sponsor {
     width: 24%;
   }
@@ -293,7 +291,7 @@
 .privacy, .project {
   h2 {
     background: #1c388f;
-    font: normal normal 600 22px/40px "Exo 2";
+    font: normal normal 600 22px/36px "Exo 2";
     text-transform: uppercase;
     padding: 4px 25px;
     display: inline-block;
@@ -323,7 +321,7 @@
       width: 100%;
     }
   }
-  .mod_newslist {
+  .mod_newslist, .mod_eventlist {
     width: 100%;
     margin: 20px auto;
     display: flex;
@@ -332,7 +330,7 @@
     .project-block {
       width: 49%;
       margin: 4px 0 ;
-      .layout_short {
+      .layout_short,  .event.layout_teaser {
         background: linear-gradient(90deg, rgba(84, 84, 84, 0.6) 100%, rgba(28, 28, 28, 0.3) 20%);
         height: 575px;
         .image_container {
@@ -364,7 +362,16 @@
   }
 }
 
-.project .mod_newslist .project-block p a  {
+#news-block.project .mod_newslist .project-block .layout_short {
+  height: 850px;
+}
+
+#project.project .mod_eventlist .project-block .event.layout_teaser {
+  height: 1000px;
+}
+
+.project .mod_newslist .project-block p a,
+.project .mod_eventlist .project-block p a {
   display: block;
   text-align: left;
   text-transform: uppercase;
@@ -383,9 +390,6 @@
 }
 
 .text-image {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding-bottom: 30px;
   margin: 50px auto 30px;
   .block-left {
@@ -411,9 +415,6 @@
 }
 
 .network-block {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0 auto 50px;
   .network {
     width: 49%;
@@ -435,6 +436,17 @@
       display: block;
     }
   }
+}
+
+.download-contain, .network-block, .text-image,
+.sponsors  {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.download-block {
+  width: 48%;
 }
 
 

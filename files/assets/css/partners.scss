@@ -15,6 +15,9 @@
 
 .members {
   width: 19%;
+  .members-top {
+    cursor: pointer;
+  }
   .members-bottom {
     display: none;
   }
