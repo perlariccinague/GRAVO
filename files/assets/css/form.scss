@@ -124,3 +124,52 @@ fieldset {
   }
 }
 
+.mod_login form , .mod_registration, .mod_lostPassword {
+  text-align: left;
+  .formbody .widget {
+    label {
+      text-transform: uppercase;
+      font-size: 15px;
+      width: 100%;
+      display: block;
+      margin: 5px 0;
+    }
+    input {
+      box-sizing: border-box;
+      padding: 10px 12px;
+      font-size: 15px;
+      margin: 5px 0;
+      outline: none;
+      width: 100%;
+      border: 2px solid $rosa;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .contact-form {
+    margin: 0 auto;
+    .formbody .widget-text, .formbody .widget-textarea {
+      & > input, & > textarea {
+        width: 100%;
+      }
+    }
+    .title .span {
+      width: 100%;
+      margin: 15px auto;
+      flex-wrap: wrap;
+      span {
+        width: 100%;
+        display: inherit;
+        margin: 7px auto;
+      }
+    }
+    .widget-checkbox fieldset span label {
+      width: 88%;
+    }
+    .widget.widget-submit {
+      width: 100%;
+    }
+  }
+}
+

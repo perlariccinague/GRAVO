@@ -129,3 +129,43 @@
     }
   }
 }
+
+@media screen and (max-width: 860px)  {
+  .inner {
+    .menu-top {
+      .logo-menu {
+        width: 65%;
+        a {
+          padding: 15px 15px;
+        }
+      }
+      .menu-close img {
+        width: 65px;
+      }
+    }
+    .menu-middle {
+      .menu-navigation {
+        margin: 0 auto 30px;
+        .mod_customnav {
+          width: 100%;
+          margin: 10px auto;
+        }
+      }
+    }
+    .menu-bottom .menu-bottom-footer > div {
+      width: 100%;
+    }
+    .graphic {
+      justify-content: space-between;
+      .ce_text {
+        width: 48%;
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  .menu-bottom {
+    position: relative;
+  }
+}

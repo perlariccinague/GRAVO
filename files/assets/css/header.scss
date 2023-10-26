@@ -91,3 +91,26 @@
     }
   }
 }
+
+@media screen and (max-width: 860px) {
+  .header {
+    .header-top {
+      display: none;
+    }
+    .header-bottom {
+      margin: 0 auto;
+      .logo-header {
+        width: 68%;
+      }
+      .header-bottom-left {
+        width: 20%;
+        .header-graphic {
+          display: none;
+        }
+        .mobile_menu_trigger img {
+          width: 65px;
+        }
+      }
+    }
+  }
+}

@@ -126,3 +126,29 @@
     width: 63%;
   }
 }
+
+@media screen and (max-width: 860px)  {
+ .footer {
+   padding: 30px 0;
+   .footer-left, .footer-right, .footer-right .ce_text {
+     width: 100%;
+   }
+   .footer-social-icons {
+     margin-top: 30px;
+   }
+ /*  .footer-right {
+     img {
+       margin: 0 auto;
+     }
+   }*/
+ }
+  .footer-bg {
+    &:before {
+      background-size: 90%;
+      height: 90px;
+    }
+    img {
+      height: 97px;
+    }
+  }
+}

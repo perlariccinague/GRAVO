@@ -15,10 +15,30 @@
 
 .members {
   width: 19%;
+  position: relative;
   .members-top {
     cursor: pointer;
   }
   .members-bottom {
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #fff;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #aaa;
+    z-index: 100;
+    p {
+      color: $grau;
+      a {
+        color: $darkblue;
+        transition: color 250ms;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
   }
 }

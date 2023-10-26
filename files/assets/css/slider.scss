@@ -36,3 +36,14 @@
     }
   }
 }
+
+@media screen and (max-width: 860px) {
+  .ce_sliderStart .slider-control  {
+    transform: translateY(-100%);
+    .slider-prev, .slider-next {
+      img {
+        width: 45px;
+      }
+    }
+  }
+}
