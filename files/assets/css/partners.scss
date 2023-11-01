@@ -2,15 +2,21 @@
 
 .members-block {
   background: url("/files/inhalte/bilder/Brick-1-bl.webp") no-repeat 0/cover;
-  .members-contain {
-    width: 90%;
-    margin: 0 auto;
-    max-width: $max-width;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 30px 0;
-  }
+}
+
+.members-block .members-contain, .members-project {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $max-width;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.members-project {
+  width: 100%;
+  padding: 0;
 }
 
 .members {

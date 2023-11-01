@@ -525,7 +525,22 @@
     padding: 10px 0;
     font: normal normal 400 15px/19px "Exo 2";
   }
+
+  #news-block.project .mod_newslist .project-block .layout_short {
+    height: auto;
+  }
+
+  #project.project .mod_eventlist .project-block .event.layout_teaser {
+    height: auto;
+  }
+  .project .mod_newslist .project-block .layout_short,
+  .project .mod_newslist .project-block .event.layout_teaser,
+  .project .mod_eventlist .project-block .layout_short,
+  .project .mod_eventlist .project-block .event.layout_teaser {
+    height: auto;
+  }
 }
+
 
 
 

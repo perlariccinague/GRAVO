@@ -7,6 +7,7 @@
 }
 
 .header {
+  height: 30vh;
   .header-top {
     background: $rosa;
     padding: 10px 0;
@@ -57,7 +58,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin: 100px auto;
+    /*margin: 100px auto;*/
+    position: relative;
+    transform: translateY(-50%);
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1020px;
+    top: 50%;
     .logo-header {
       width: 48%;
       img {
@@ -92,7 +99,7 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1000px) {
   .header {
     .header-top {
       display: none;

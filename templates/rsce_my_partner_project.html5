@@ -1,0 +1,18 @@
+<a href="<?= $this->url ?>" class="member-project">
+    <div class="members-top">
+        <img src="{{file::<?= $this->image ?>}}">
+    </div>
+    <!--<div class="members-bottom">
+        <h3><?/*= $this->text  */?></h3>
+        <p><?/*= $this->description  */?></p>
+    </div>-->
+</a>
+
+
+
+
+
+
+
+
+
