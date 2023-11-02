@@ -3,10 +3,13 @@
         <img src="{{file::<?= $this->image ?>}}">
     </div>
     <div class="members-bottom">
+        <div class="popup-close">&times;</div>
         <h3><?= $this->text  ?></h3>
         <p><?= $this->description  ?></p>
     </div>
 </div>
+
+
 
 
 

@@ -146,6 +146,37 @@ fieldset {
   }
 }
 
+.filter {
+  padding: 20px 0 0;
+  font: normal normal 400 20px/26px "Exo 2";
+  color: white;
+  #event-radio-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    .radio-option {
+      label {
+        cursor: pointer;
+      }
+      input {
+        display: none;
+      }
+      span {
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 3px solid blue;
+        border-radius: 50%;
+        outline: none;
+        background: transparent;
+        display: inline-block;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 860px) {
   .contact-form {
     margin: 0 auto;

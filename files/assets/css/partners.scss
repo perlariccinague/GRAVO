@@ -35,16 +35,48 @@
     padding: 20px 15px;
     box-sizing: border-box;
     box-shadow: 0 0 20px #aaa;
-    z-index: 100;
+    z-index: 200;
     p {
       color: $grau;
+      font: normal normal 400 20px/26px "Exo 2";
       a {
         color: $darkblue;
         transition: color 250ms;
+        text-transform: initial;
         &:hover {
           color: $blue;
         }
       }
     }
+    .popup-close {
+      font-size: 40px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #cc007b;
+      position: absolute;
+      right: 17px;
+      top: 12px;
+      line-height: 0.5em;
+      background: white;
+      z-index: 100;
+    }
+  }
+}
+
+.member-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+}
+
+@media screen and (max-width: 860px) {
+  .members {
+    width: 49%;
+    margin: 0 auto;
   }
 }

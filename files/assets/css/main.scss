@@ -183,7 +183,7 @@
 }
 
 .mod_newsreader .layout_full, .mod_eventreader .layout_full,
- .privacy {
+ .privacy, .members-bottom {
   h3 {
     text-transform: uppercase;
   }
@@ -228,7 +228,7 @@
     ul {
       margin-bottom: 15px;
     }
-    .ce_image {
+    .ce_image, .image_container {
       img {
         width: 100%;
       }

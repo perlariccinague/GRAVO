@@ -1,30 +1,34 @@
 const allMembers = document.querySelectorAll('.members-top');
 const allMemberPopups = document.querySelectorAll('.members-bottom');
-let showElement = false;
+const popUpClose = document.querySelectorAll('.popup-close');
+const overlay = document.querySelector('.member-overlay')
 
-
-/*allMembers.forEach(member => {
-    member.addEventListener('click', event => {
-       console.log(member);
-        document.querySelector('.members-bottom').style.display ="block"
-    })
-});*/
 
 allMembers.forEach(member => {
     member.addEventListener('click', event => {
-        let memberPopUp = member.nextElementSibling; // Get the next sibling
-       /* console.log(showElement);*/
+        let memberPopUp = member.nextElementSibling;
         if (memberPopUp.style.display === "block") {
-            memberPopUp.style.display = "none"; // Hide the element
-            showElement = false;
+            memberPopUp.style.display = "none";
+            overlay.style.display = 'none'
         } else {
-            memberPopUp.style.display = "block"; // Show the element
-            console.log(showElement);
-            showElement = true;
+            memberPopUp.style.display = "block";
+            overlay.style.display = 'block'
         }
-        showElement = false;
     });
 });
+
+popUpClose.forEach(close => {
+    close.addEventListener('click', (event) => {
+        event.preventDefault();
+        allMemberPopups.forEach(memberPopUp => {
+              memberPopUp.style.display = "none";
+        })
+        overlay.style.display = 'none'
+    })
+})
+
+
+
 
 
 
