@@ -6,36 +6,36 @@
         <div class="filter-radio">
             <form id="event-radio-form">
                 <div class="radio-option">
-                    <label for="termine">
-                        <input type="checkbox" id="termine">
+                    <label for="test">
+                        <input type="checkbox" id="test">
                         <span></span>
                         &nbsp;&nbsp;Test
                     </label>
                 </div>
                 <div class="radio-option">
-                    <label for="seminar">
-                        <input type="checkbox" id="seminar">
+                    <label for="test1">
+                        <input type="checkbox" id="test1">
                         <span></span>
                         &nbsp;&nbsp;Test1
                     </label>
                 </div>
                 <div class="radio-option">
-                    <label for="mentoring">
-                        <input type="checkbox" id="mentoring">
+                    <label for="test2">
+                        <input type="checkbox" id="test2">
                         <span></span>
                         &nbsp;&nbsp;Test2
                     </label>
                 </div>
                 <div class="radio-option">
-                    <label for="trainer">
-                        <input type="checkbox" id="trainer">
+                    <label for="test3">
+                        <input type="checkbox" id="test3">
                         <span></span>
                         &nbsp;&nbsp;Test3
                     </label>
                 </div>
             </form>
-            <div class="radio-option kill-filter" style="cursor:pointer;color:#cecece">
-                <span>Filter aufheben</span>
+            <div class="radio-option kill-filter" ">
+                <span onclick="killFilter();">Filter aufheben</span>
             </div>
         </div>
     </div>

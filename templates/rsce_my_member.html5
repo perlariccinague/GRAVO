@@ -1,13 +1,50 @@
-<div class="members">
-    <div class="members-top">
-        <img src="{{file::<?= $this->image ?>}}">
+<ul>
+    <?php foreach ($this->filter as $filteritem): ?>
+        <li>
+            <div class="category"><?php echo $filteritem->name ?>
+                <p><?= $this->description3  ?><strong>Branche / Geschäftsfeld</strong></p>
+                <ul class="industry">
+                    <?php if ($filteritem->konservierungstoffe): ?><li title="Konservierungstoffe">Forschung und Entwicklung&nbsp;&nbsp;</li><?php endif; ?>
+                    <?php if ($filteritem->farbstoff): ?><li title="Farbstoff Beta-Carotin">Aus- und Weiterbildung&nbsp;&nbsp;</li><?php endif; ?>
+                    <?php if ($filteritem->suessungsmittel): ?><li title="Süßungsmittel">Komponenten- und Systemhersteller&nbsp;&nbsp;</li><?php endif; ?>
+                    <?php if ($filteritem->antioxidationsmittel): ?><li title="Antioxidationsmittel">Industriedruck&nbsp;&nbsp;</li><?php endif; ?>
+                    <?php if ($filteritem->schwefelstoffe): ?><li title="Schwefelstoffe">Oberflächentechnik (Laser, Beschichtung, Folierung, etc.)&nbsp;&nbsp;</li><?php endif; ?>
+                    <?php if ($filteritem->support): ?><li title="Antioxidationsmittel">Bündnis-Support&nbsp;&nbsp;</li><?php endif; ?>
+                </ul>
+
+                <ul class="additions">
+                    <?php if ($filteritem->vegetarisch): ?><li class="vegetarisch" title="vegetarisch"></li><?php endif; ?>
+                    <?php if ($filteritem->vegan): ?><li class="vegan" title="vegan"></li><?php endif; ?>
+                    <?php if ($filteritem->laktosefrei): ?><li class="laktosefrei" title="laktosefrei"></li><?php endif; ?>
+                    <?php if ($filteritem->glutenfrei): ?><li class="glutenfrei" title="glutenfrei"></li><?php endif; ?>
+                </ul>
+
+
+            </div>
+
+            <div class="menu_description"><?php echo $filteritem->description ?></div>
+
+        </li>
+
+    <?php endforeach ?>
+</ul>
+
+<section class="<?php echo $this->class ?> block"<?php echo $this->cssID ?>>
+    <div class="members">
+        <div class="members-top">
+            <img src="{{file::<?= $this->image ?>}}">
+        </div>
+        <div class="members-bottom">
+            <div class="popup-close">&times;</div>
+            <img src="{{file::<?= $this->image ?>}}">
+            <h3><?= $this->text  ?></h3>
+            <p><?= $this->description  ?></p>
+        </div>
     </div>
-    <div class="members-bottom">
-        <div class="popup-close">&times;</div>
-        <h3><?= $this->text  ?></h3>
-        <p><?= $this->description  ?></p>
-    </div>
-</div>
+</section>
+
+
+
 
 
 
