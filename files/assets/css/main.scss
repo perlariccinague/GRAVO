@@ -368,7 +368,7 @@
 }
 
 #project.project .mod_eventlist .project-block .event.layout_teaser {
-  height: 1000px;
+  height: 800px;
 }
 
 .project .mod_newslist .project-block p a,
@@ -376,6 +376,10 @@
   display: block;
   text-align: left;
   text-transform: uppercase;
+}
+
+.project-teaser p.time {
+  padding: 10px 0;
 }
 
 #work-group.project .mod_newslist .project-block .layout_short {

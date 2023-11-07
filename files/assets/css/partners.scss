@@ -86,9 +86,9 @@
 }
 
 .filter {
-  padding: 20px 0 0;
+  margin: 20px auto;
   font: normal normal 400 20px/26px "Exo 2";
-  color: white;
+  color: $darkblue;
   #event-radio-form {
     display: flex;
     justify-content: space-between;
@@ -119,12 +119,18 @@
   }
   .radio-option.kill-filter {
     cursor: pointer;
-    color: #cecece;
+    /*color: #cecece;*/
   }
 }
 
 .category {
   position: absolute;
+}
+
+#map {
+  height: 75vh;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 860px) {

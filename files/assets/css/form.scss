@@ -4,7 +4,7 @@
   width: 90%;
   margin: 0 auto 30px;
   max-width: $max-width;
-  .formbody .widget-text, .formbody .widget-textarea  {
+  .formbody .widget-text, .formbody .widget-textarea, .formbody .widget-calendar  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -42,6 +42,32 @@ fieldset {
   border: none;
   padding: 0;
 }
+
+#event-form.contact-form .formbody .widget-text, #event-form.contact-form .formbody .widget-textarea {
+   input, textarea {
+     border: 1px solid $rosa;
+   }
+}
+
+#event-form.contact-form .formbody .widget-text.widget-calendar {
+  #ctrl_30_wrapper, #ctrl_22_wrapper {
+    width: 63%;
+    input{
+      display: inline-block;
+      width: 92%;
+      background: white;
+      margin: 10px 0;
+      padding: 10px 10px;
+      outline: 0;
+      font-size: 20px;
+    }
+  }
+}
+
+#event-form {
+  margin: 20px auto;
+}
+
 
 .contact-form .widget-checkbox, .contact-form  .widget-radio{
   margin: 20px 0;

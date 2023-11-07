@@ -27,8 +27,19 @@ popUpClose.forEach(close => {
     })
 })
 
+//Map
+const map = L.map('map').setView([51.3397, 12.3731], 15);
+const carte = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
+carte.addTo(map)
 
-//Filter
+ L.marker([51.3397, 12.3731]).addTo(map);
+
+
+
+/*//Filter
 
 let radioTest = document.getElementById('test');
 let radioTest1 = document.getElementById('test1');
@@ -110,12 +121,12 @@ eventRadio.addEventListener('click',() => {
         allPartners1.forEach(partner => {
             partner.classList.add('radioChecked');
         })
-        killTypeFilter.style.color = "#cecece";
+        killTypeFilter.style.color = "#1c388f";
     } else {
         killTypeFilter.style.color = "#00aee5";
     }
     filter();
-})
+})*/
 
 
 
