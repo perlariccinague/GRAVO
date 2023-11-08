@@ -28,14 +28,56 @@ popUpClose.forEach(close => {
 })
 
 //Map
-const map = L.map('map').setView([51.3397, 12.3731], 15);
+/*
+const map = L.map('map').setView([51.351738, 12.4257344], 17);
 const carte = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 });
 carte.addTo(map)
 
- L.marker([51.3397, 12.3731]).addTo(map);
+/!*const marker = L.marker([51.351738, 12.4257344]).addTo(map);
+const popUp = marker.bindPopup("<b>Permoserstraße 15</b><br>04318 Leipzig.").clickPopup();
+popUp.addTo(map);*!/
+
+const gravomer = L.marker([51.351738, 12.4257344]).bindPopup('This is Littleton, CO.'),
+    micromac   = L.marker([50.8173474, 12.921595]).bindPopup('This is Denver, CO.'),
+    schilling    = L.marker([39.73, -104.8]).bindPopup('This is Aurora, CO.'),
+    achilles    = L.marker([39.77, -105.23]).bindPopup('This is Golden, CO.');
+
+var cities = L.layerGroup([gravomer, micromac, schilling, achilles]);
+cities.addTo(map)
+
+*/
+// Creating map options
+var mapOptions = {
+    center: [51.3398095, 12.3763205],
+    zoom: 8
+}
+var map = new L.map('map', mapOptions); // Creating a map object
+
+// Creating a Layer object
+/*var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+map.addLayer(layer); */     // Adding layer to the map
+const carte = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 15,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
+carte.addTo(map)
+
+
+// Creating markers
+var gravomer = new L.Marker([51.351738, 12.4257344]).bindPopup("<b>Permoserstraße 15</b><br>04318 Leipzig.");
+var micromac = new L.Marker([50.8173474, 12.921595]).bindPopup("<b>Technologie-Campus 8</b><br>09126 Chemnitz.");
+var schilling = new L.Marker([51.3083697, 10.846073]).bindPopup("<b>Mühlenweg 3</b><br>99706 Sondershausen.");
+
+
+// Creating layer group
+var layerGroup = L.layerGroup([gravomer, micromac, schilling]);
+layerGroup.addTo(map);    // Adding layer group to map
+
+const url = 'https://gravomer.de/api/v2/pages/?type=partner.PartnerPage&locale=de&fields=*&order=title';
+console.log(url);
 
 
 
