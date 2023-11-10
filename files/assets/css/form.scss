@@ -51,15 +51,16 @@ fieldset {
 
 #event-form.contact-form .formbody .widget-text.widget-calendar {
   #ctrl_30_wrapper, #ctrl_22_wrapper {
-    width: 63%;
+    border: 1px solid #cc007b;
+    display: inline-block;
+    width: 60%;
+    background: white;
+    margin: 10px 0;
+    padding: 10px 10px;
     input{
-      display: inline-block;
-      width: 92%;
-      background: white;
-      margin: 10px 0;
-      padding: 10px 10px;
+     border: 0;
+      width: 95%;
       outline: 0;
-      font-size: 20px;
     }
   }
 }
@@ -110,7 +111,6 @@ fieldset {
 
 .contact-form.ce_form .widget-checkbox fieldset span input:checked ~ label::before,
 .contact-form.ce_form .widget-radio fieldset .title .span span input:checked ~ label::before {
-  /*content: "✓";*/
   background: $rosa;
 }
 
@@ -176,6 +176,7 @@ fieldset {
 
 @media screen and (max-width: 860px) {
   .contact-form {
+   /* width: 100%;*/
     margin: 0 auto;
     .formbody .widget-text, .formbody .widget-textarea {
       & > input, & > textarea {
@@ -198,6 +199,20 @@ fieldset {
     .widget.widget-submit {
       width: 100%;
     }
+  }
+  #event-form.contact-form .formbody .widget-text.widget-calendar #ctrl_30_wrapper,
+  #event-form.contact-form .formbody .widget-text.widget-calendar #ctrl_22_wrapper {
+    width: 100%;
+    input {
+      width: 90%;
+    }
+  }
+  #event-form {
+    width: 100%;
+  }
+
+  .widget.widget-captcha.mandatory {
+    display: none;
   }
 }
 

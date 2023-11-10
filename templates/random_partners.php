@@ -31,16 +31,16 @@ if (is_dir($dir)) {
 
 <div class="sponsors">
     <div class="ce_image sponsor" >
-        <!--<a href="">--><img src="files/inhalte/partner/<?php echo $file_array[$randoms[0]] ?>" alt=""><!--</a>-->
+        <a href="{{link_url::11}}"><img src="files/inhalte/partner/<?php echo $file_array[$randoms[0]] ?>" alt=""></a>
     </div>
     <div class="ce_image sponsor">
-       <img src="files/inhalte/partner/<?php echo $file_array[$randoms[1]] ?>" alt="">
+        <a href="{{link_url::11}}"><img src="files/inhalte/partner/<?php echo $file_array[$randoms[1]] ?>" alt=""></a>
     </div>
     <div class="ce_image sponsor">
-        <img src="files/inhalte/partner/<?php echo $file_array[$randoms[2]] ?>" alt="">
+        <a href="{{link_url::11}}"><img src="files/inhalte/partner/<?php echo $file_array[$randoms[2]] ?>" alt=""></a>
     </div>
     <div class="ce_image sponsor">
-        <img src="files/inhalte/partner/<?php echo $file_array[$randoms[3]] ?>" alt="">
+        <a href="{{link_url::11}}"><img src="files/inhalte/partner/<?php echo $file_array[$randoms[3]] ?>" alt=""></a>
     </div>
 </div>
 

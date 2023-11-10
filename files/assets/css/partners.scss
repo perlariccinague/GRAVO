@@ -128,17 +128,15 @@
 }
 
 #map {
-  height: 75vh;
+  height: 50vh;
   width: 100%;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   z-index: 50;
 }
 
 #container .leaflet-popup-content {
   font: normal normal 400 18px/24px "Exo 2";
-  b {
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 860px) {

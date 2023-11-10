@@ -54,11 +54,12 @@ var mapOptions = {
     center: [51.3398095, 12.3763205],
     zoom: 8
 }
-var map = new L.map('map', mapOptions); // Creating a map object
+/*var map = new L.map('map', mapOptions); // Creating a map object*/
 
 // Creating a Layer object
 /*var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 map.addLayer(layer); */     // Adding layer to the map
+/*
 const carte = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 15,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -78,6 +79,7 @@ layerGroup.addTo(map);    // Adding layer group to map
 
 const url = 'https://gravomer.de/api/v2/pages/?type=partner.PartnerPage&locale=de&fields=*&order=title';
 console.log(url);
+*/
 
 
 

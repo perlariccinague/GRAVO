@@ -175,4 +175,8 @@ table {
       height: 500px;
     }
   }
+  .calendar, .project .ce_headline.calendar-headline {
+    display: none;
+  }
 }
+

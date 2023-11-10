@@ -371,6 +371,10 @@
   height: 800px;
 }
 
+#project.mobile-only {
+  display: none;
+}
+
 .project .mod_newslist .project-block p a,
 .project .mod_eventlist .project-block p a {
   display: block;
@@ -542,6 +546,14 @@
   .project .mod_eventlist .project-block .layout_short,
   .project .mod_eventlist .project-block .event.layout_teaser {
     height: auto;
+  }
+
+  #project.mobile-only {
+    display: block;
+  }
+
+  #project.desktop-only {
+    display: none;
   }
 }
 
