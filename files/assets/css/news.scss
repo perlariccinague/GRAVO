@@ -32,16 +32,15 @@
     .mod_newslist, .mod_eventlist {
       .layout_latest, .event.layout_list {
         font-size: 17px;
-       /* margin: 0 25px;*/
         box-sizing: border-box;
-       /* height: 155px;*/
-        max-width: 410px;
+        width: 98%;
         padding-bottom: 7px;
         &:not(:last-child) {
           border-bottom: 1px solid white;
         }
         &:first-child {
           padding-top: 20px;
+          height: 155px;
       }
         p, h3 {
           a {
@@ -160,7 +159,12 @@ table {
   }
 }
 
-
+@media screen and (max-width: 920px) {
+  .news-event .news-bg .mod_newslist .layout_latest:first-child,
+  .news-event .event-bg .mod_eventlist .event.layout_list:first-child {
+    height: 180px;
+  }
+}
 
 @media screen and (max-width: 860px) {
   .news-event {
@@ -177,6 +181,11 @@ table {
   }
   .calendar, .project .ce_headline.calendar-headline {
     display: none;
+  }
+
+  .news-event .news-bg .mod_newslist .layout_latest:first-child,
+  .news-event .event-bg .mod_eventlist .event.layout_list:first-child {
+    height: auto;
   }
 }
 

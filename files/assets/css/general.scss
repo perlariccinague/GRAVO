@@ -53,3 +53,74 @@ button {
   text-align: center;
 }
 
+.error #header {
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+  .header-error {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    img {
+      width: 400px;
+    }
+  }
+}
+
+.error-image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ce_text.error-teaser {
+  position: absolute;
+  top: 50%;
+  color: white;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  img {
+    width: 500px;
+  }
+  p {
+    font: normal normal 600 48px/56px"Exo 2";
+    text-transform: uppercase;
+    a {
+      display: inline-block;
+      font: normal normal 600 20px/24px"Exo 2";
+      color: #59053d;;
+      padding: 15px 40px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      overflow: hidden;
+      background: white;
+      transition: color 250ms;
+      &:hover {
+        color: #320556;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .error #header .header-error {
+    padding: 0;
+    img {
+      width: 250px;
+    }
+  }
+  .ce_text.error-teaser {
+    top: 60%;
+    img {
+      width: 350px;
+    }
+    p {
+      font: normal normal 600 24px/30px "Exo 2";
+    }
+  }
+}
+
+

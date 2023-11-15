@@ -375,12 +375,12 @@
   display: none;
 }
 
-.project .mod_newslist .project-block p a,
+/*.project .mod_newslist .project-block p a,
 .project .mod_eventlist .project-block p a {
   display: block;
   text-align: left;
   text-transform: uppercase;
-}
+}*/
 
 .project-teaser p.time {
   padding: 10px 0;
@@ -469,6 +469,38 @@
   }
 }
 
+.project .mod_newslist .project-block p a,
+.project .mod_eventlist .project-block p a {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 145px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background: url("/files/assets/layout/Pfeil-right.svg") no-repeat;
+  }
+}
+
+.membership {
+  p {
+    a {
+      color: $rosa;
+      border: 2px solid $rosa;
+      padding: 10px 25px;
+      text-transform: uppercase;
+      transition: background-color 250ms, color 250ms;
+      &:hover {
+        background-color: $rosa;
+        color: white;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 860px) {
   .teaser-content {
     margin: 30px auto;
@@ -510,6 +542,11 @@
     .project-block {
       width: 100%;
       margin: 10px 0;
+      p a {
+        &:before {
+          left: 65px;
+        }
+      }
     }
   }
 
@@ -529,9 +566,9 @@
     width: 100%;
   }
 
-  .mod_article .ce_download h2 {
+  .mod_article .ce_download h2, .mod_article .ce_download h3 {
     padding: 10px 0;
-    font: normal normal 400 15px/19px "Exo 2";
+   /* font: normal normal 400 15px/19px "Exo 2";*/
   }
 
   #news-block.project .mod_newslist .project-block .layout_short {
@@ -554,6 +591,10 @@
 
   #project.desktop-only {
     display: none;
+  }
+
+  .networking .ce_text.image-bottom.block img {
+    display: flex;
   }
 }
 

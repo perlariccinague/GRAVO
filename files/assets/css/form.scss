@@ -4,7 +4,8 @@
   width: 90%;
   margin: 0 auto 30px;
   max-width: $max-width;
-  .formbody .widget-text, .formbody .widget-textarea, .formbody .widget-calendar  {
+  .formbody .widget-text, .formbody .widget-textarea,
+  .formbody .widget-calendar, .formbody .widget-select {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -16,7 +17,7 @@
       align-self: center;
       padding: 0 7px;
     }
-    & > input, & > textarea {
+    & > input, & > textarea, & > select {
       display: inline-block;
       width: 60%;
       background: white;
@@ -26,6 +27,7 @@
       border-bottom: 1px solid $rosa;
       outline: 0;
       font-size: 20px;
+      box-sizing: border-box;
       transition: border 250ms;
       &:hover {
         border-bottom: 1px solid $blue;
@@ -49,7 +51,7 @@ fieldset {
    }
 }
 
-#event-form.contact-form .formbody .widget-text.widget-calendar {
+#event-form.contact-form .formbody .widget-text.widget-calendar, {
   #ctrl_30_wrapper, #ctrl_22_wrapper {
     border: 1px solid #cc007b;
     display: inline-block;
@@ -57,6 +59,7 @@ fieldset {
     background: white;
     margin: 10px 0;
     padding: 10px 10px;
+    box-sizing: border-box;
     input{
      border: 0;
       width: 95%;
@@ -67,6 +70,10 @@ fieldset {
 
 #event-form {
   margin: 20px auto;
+}
+
+#event-form.contact-form .formbody .widget-select select {
+  border: 1px solid #cc007b;
 }
 
 
@@ -178,7 +185,7 @@ fieldset {
   .contact-form {
    /* width: 100%;*/
     margin: 0 auto;
-    .formbody .widget-text, .formbody .widget-textarea {
+    .formbody .widget-text, .formbody .widget-textarea,  {
       & > input, & > textarea {
         width: 100%;
       }
@@ -201,7 +208,8 @@ fieldset {
     }
   }
   #event-form.contact-form .formbody .widget-text.widget-calendar #ctrl_30_wrapper,
-  #event-form.contact-form .formbody .widget-text.widget-calendar #ctrl_22_wrapper {
+  #event-form.contact-form .formbody .widget-text.widget-calendar #ctrl_22_wrapper,
+  #event-form.contact-form .formbody .widget-select select{
     width: 100%;
     input {
       width: 90%;
