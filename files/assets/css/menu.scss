@@ -23,6 +23,11 @@
         }
       }
     }
+    .logo-header {
+      img {
+        width: 285px;
+      }
+    }
     .menu-close {
       cursor: pointer;
       transition: transform 250ms;
@@ -143,6 +148,9 @@
         a {
           padding: 15px 15px;
         }
+      }
+      .logo-header {
+        width: 65%;
       }
       .menu-close img {
         width: 65px;

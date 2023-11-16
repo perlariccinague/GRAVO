@@ -1,6 +1,6 @@
 <div class="header">
     <div class="menu-top">
-        {{insert_content::276}}
+        {{insert_content::2}}
         <a class="menu-close" data-mobile-menu="close">
             <img src="files/assets/layout/close.svg" alt="close">
         </a>
