@@ -40,9 +40,9 @@
     background: #fff;
     padding: 20px 15px;
     box-sizing: border-box;
-    box-shadow: 0 0 20px #aaa;
+    box-shadow: 0 0 20px #000000f2;
     z-index: 200;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 45%;
     p {
       color: $grau;
@@ -67,6 +67,10 @@
       line-height: 0.5em;
       background: white;
       z-index: 102;
+      img {
+        width: 50px;
+        padding: 20px;
+      }
     }
     img {
       width: 200px;

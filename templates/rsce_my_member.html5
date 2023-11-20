@@ -1,18 +1,31 @@
+<!--<section class="<?php /*echo $this->class */?> block"<?php /*echo $this->cssID */?>>
+    <div class="members">
+        <div class="members-top">
+            <img src="{{file::<?/*= $this->image */?>}}">
+        </div>
+        <div class="members-bottom">
+            <div class="popup-close">&times;</div>
+            <img src="{{file::<?/*= $this->image */?>}}">
+            <h3><?/*= $this->text  */?></h3>
+            <p><?/*= $this->description  */?></p>
+        </div>
+    </div>
+</section>-->
 
-<section class="<?php echo $this->class ?> block"<?php echo $this->cssID ?>>
+<section data-coordinates-y="<?= $this->yCoords ?>" data-coordinates-x="<?= $this->xCoords ?>" data-name="<?= $this->text ?>" class="<?php echo $this->class ?> block"<?php echo $this->cssID ?>>
     <div class="members">
         <div class="members-top">
             <img src="{{file::<?= $this->image ?>}}">
         </div>
         <div class="members-bottom">
-            <div class="popup-close">&times;</div>
+            <!--<div class="popup-close">&times;</div>-->
+            <div class="popup-close"><img src="files/assets/layout/close.svg"> </div>
             <img src="{{file::<?= $this->image ?>}}">
             <h3><?= $this->text  ?></h3>
             <p><?= $this->description  ?></p>
         </div>
     </div>
 </section>
-
 
 
 

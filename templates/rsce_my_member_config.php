@@ -24,16 +24,14 @@ return array(
             'eval' => array('rte' => 'tinyMCE'),
             'inputType' => 'textarea',
         ),
-        /*'feldName' => array(
-            'inputType' => 'checkbox',
-            'eval' => array(
-                'multiple' => true,
-            ),
-            'options' => array(
-                'Name 1',
-                'Name 2',
-            ),
-        ),*/
+        'xCoords' => array(
+            'label' => array('Geolocation X'),
+            'inputType' => 'text',
+        ),
+        'yCoords' => array(
+            'label' => array('Geolocation Y'),
+            'inputType' => 'text',
+        ),
     ),
 );
 

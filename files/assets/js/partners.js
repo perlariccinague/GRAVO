@@ -27,28 +27,6 @@ popUpClose.forEach(close => {
     })
 })
 
-//Map
-/*
-const map = L.map('map').setView([51.351738, 12.4257344], 17);
-const carte = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-});
-carte.addTo(map)
-
-/!*const marker = L.marker([51.351738, 12.4257344]).addTo(map);
-const popUp = marker.bindPopup("<b>Permoserstraße 15</b><br>04318 Leipzig.").clickPopup();
-popUp.addTo(map);*!/
-
-const gravomer = L.marker([51.351738, 12.4257344]).bindPopup('This is Littleton, CO.'),
-    micromac   = L.marker([50.8173474, 12.921595]).bindPopup('This is Denver, CO.'),
-    schilling    = L.marker([39.73, -104.8]).bindPopup('This is Aurora, CO.'),
-    achilles    = L.marker([39.77, -105.23]).bindPopup('This is Golden, CO.');
-
-var cities = L.layerGroup([gravomer, micromac, schilling, achilles]);
-cities.addTo(map)
-
-*/
 // Creating map options
 var mapOptions = {
     center: [51.3398095, 12.3763205],

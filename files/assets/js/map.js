@@ -1269,44 +1269,39 @@ const items = [
 ]
 
 
-let itemsCoordinate = []
+let itemsCoordinate;
 let marker;
-let title;
-let city
+
 
 const markerIcon = L.icon({
     iconUrl: 'files/assets/layout/map-marker.png',
     iconSize: [24, 42],
+    iconAnchor: [24, 42],
+
 });
+
 
 
 const map = L.map('map').setView([50.9159014, 11.5544331], 6);
-/*const carte = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 17,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-});
-carte.addTo(map);*/
 
-const carte1 = L.tileLayer('https://api.mapbox.com/styles/v1/floriantepelmann/clnx60cfk007b01pfc9n07mqg/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
+const carte = L.tileLayer('https://api.mapbox.com/styles/v1/floriantepelmann/clnx60cfk007b01pfc9n07mqg/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 17,
     accessToken: 'pk.eyJ1IjoiZmxvcmlhbnRlcGVsbWFubiIsImEiOiJjbG54NXg0MmcwZG1nMmxvYWVlN2h6ZDg5In0.JsAijct90waDQiuOZ_3ImA'
 });
-carte1.addTo(map);
+carte.addTo(map);
 
-
-
-console.log(items.length);
-
-
-
-items.forEach(item => {
-    /*console.log(item.title);*/
-    itemsCoordinate = item.geolocation;
+const memberAll = document.querySelectorAll('.ce_rsce_my_member');
+memberAll.forEach(member => {
+    itemsCoordinate = {
+        lat: member.dataset.coordinatesX,
+        lng: member.dataset.coordinatesY
+    }
     marker = L.marker(itemsCoordinate, {icon: markerIcon}).addTo(map);
-    /*console.log(marker);*/
-    marker.bindPopup(item.title);
+    marker.bindPopup(member.dataset.name);
+
 })
+
 
 
 
