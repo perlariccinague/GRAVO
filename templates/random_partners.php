@@ -1,6 +1,6 @@
 <?php
 $files = scandir('files/inhalte/partner');
-$files_count = count((array)($files))-3;
+$files_count = count((array)($files))-4;
 
 function getRandoms($quant=1, $min=0, $max=1){
     $randary = array();
