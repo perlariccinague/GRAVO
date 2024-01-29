@@ -163,6 +163,11 @@ button {
   display: none;
 }
 
+ol li {
+  text-align: left;
+  font-size: 19px;
+}
+
 @media screen and (max-width: 860px) {
   .error #header .header-error {
     padding: 0;

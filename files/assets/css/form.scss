@@ -204,6 +204,34 @@ fieldset {
   }
 }
 
+.mod_eventreader .ce_form {
+  margin: 80px auto;
+  form {
+    .formbody {
+      .widget-text {
+        margin: 10px 0;
+        label,input {
+          display: inline-block;
+          width: 300px;
+          outline: none;
+        }
+        input {
+          padding: 8px 12px;
+          cursor: pointer;
+        }
+        &.widget-checkbox {
+          label {
+            width: 900px;
+          }
+          input {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 860px) {
   .contact-form {
