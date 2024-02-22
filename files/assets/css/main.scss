@@ -498,6 +498,77 @@
   }
 }
 
+.event.featured .time {
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    content: '';
+    background: url('../layout/gravo-social.svg');
+  }
+}
+
+.calendar .event {
+  &.featured a {
+    position: relative;
+    display: block;
+    padding-top: 40px;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 35px;
+      height: 35px;
+      content: '';
+      background: url('../layout/gravo-social.svg');
+    }
+  }
+  &.versteckt {
+    pointer-events: none;
+  }
+}
+
+.event.layout_full {
+  .info.featured {
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      width: 70px;
+      height: 70px;
+      content: '';
+      background: url('../layout/gravo-social.svg');
+    }
+  }
+}
+
+.project-block.versteckt {
+  display: none;
+}
+
+.mod_eventlist.event-list-home {
+  .event.featured {
+    .time {
+      padding-right: 40px;
+      &:after {
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        transform: translateY(-50%);
+      }
+    }
+    h3 {
+      padding-right: 40px;
+    }
+  }
+}
+
 @media screen and (max-width: 860px) {
   .teaser-content {
     margin: 30px auto;

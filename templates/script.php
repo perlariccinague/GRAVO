@@ -9,4 +9,8 @@
       });
     }, 150)
   }
+
+  if(window.location.href.includes('month=')) {
+    window.scrollTo(0, document.querySelector('.calendar-headline').getBoundingClientRect().y);
+  }
 </script>
