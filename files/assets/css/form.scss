@@ -208,7 +208,7 @@ fieldset {
   margin: 80px auto;
   form {
     .formbody {
-      .widget-text {
+      .widget-text,.widget-checkbox {
         margin: 10px 0;
         label,input {
           display: inline-block;
@@ -226,6 +226,14 @@ fieldset {
           input {
             width: 20px;
           }
+        }
+      }
+      .widget-checkbox {
+        legend {
+          font-weight: bold;
+        }
+        label {
+          display: inline;
         }
       }
     }
