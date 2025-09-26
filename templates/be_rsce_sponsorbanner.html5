@@ -1,0 +1,3 @@
+<?php foreach($this->logos as $logo): ?>
+    <img style="height: 50px; margin-right: 20px;" alt="Sponsor Logo" src="{{file::<?= $logo->logo ?>}}">
+<?php endforeach; ?>

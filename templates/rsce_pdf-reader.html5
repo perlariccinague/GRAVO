@@ -1,0 +1,9 @@
+<div class="pdf-reader">
+    <object
+        data="{{file::<?= $this->pdf ?>}}"
+        type="application/pdf"
+    >
+        <p class="pdf-fallback en-only">It appears you don't have a PDF-reader available in your browser. <a href="{{file::<?= $this->pdf ?>}}" download="">Download the PDF here.</a></p>
+        <p class="pdf-fallback de-only">Anscheinend ist kein PDF-Viewer in Ihrem Browser verfügbar. <a href="{{file::<?= $this->pdf ?>}}" download="">Laden Sie die PDF hier herunter.</a></p>
+    </object>
+</div>

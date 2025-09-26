@@ -1,0 +1,5 @@
+<div class="sponsor-banner">
+    <?php foreach($this->logos as $logo): ?>
+        <img alt="Sponsor-Logo" src="{{file::<?= $logo->logo ?>}}">
+    <?php endforeach; ?>
+</div>

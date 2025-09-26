@@ -18,6 +18,7 @@
     }
     .slider-prev, .slider-next {
       transition: filter  250ms;
+      transform: translateY(-75%);
       img {
         width: 60px;
         box-shadow: 0 0 10px #00000096;

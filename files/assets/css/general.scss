@@ -151,8 +151,23 @@ button {
           position: absolute;
           top: 0;
           color: white;
-          padding: 70px 90px 30px;
-          font: normal normal 300 17px/24px "Exo 2";
+          padding: 70px 250px 0 90px;
+          margin-bottom: 0;
+          line-height: 1.1em;
+        }
+        table {
+          top: 400px;
+          margin: 0 250px 30px 90px;
+          width: 67% !important;
+          background: transparent;
+          position: absolute;
+          bottom: 0;
+          color: white;
+          border: none;
+          outline: none;
+          td {
+            border: none;
+          }
         }
       }
     }
@@ -199,16 +214,19 @@ ol li {
        background-size: 39px;
      }
      .banner-content .ce_text {
-       .image_container {
+       .image_container:first-child {
          display: none;
        }
        p {
          position: relative;
          padding: 90px 20px;
          height: 104%;
-         background: url("/files/inhalte/bilder/schneehintergrund-mobil.webp") no-repeat bottom left;
+         background: url("/files/inhalte/PopUp/schneehintergrund-mobil.webp") no-repeat bottom left;
          margin: 0;
          background-size: cover;
+       }
+       table {
+         display: none;
        }
      }
    }
